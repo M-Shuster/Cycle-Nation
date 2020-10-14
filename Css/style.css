@@ -1,0 +1,271 @@
+body{
+    background-color: #f4f4f4;
+    color: #333;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    text-size-adjust:auto;
+}
+
+p {
+    color:#333
+}
+
+.transbox1 {
+    margin:auto;
+    background-color: #fff;
+    border: 1px solid black;
+    opacity: 0.5;
+    width: 80%;
+    height: 10%;
+    padding: 10px;
+}
+
+.transbox2 {
+    margin-left:100px;
+    background-color: #fff;
+    border: 1px solid black;
+    opacity: 0.5;
+    width: 155px;
+    height: 70px;
+    padding: 10px;
+    color: red;
+    
+}
+
+.btn {
+    background-color: #333;
+    border: none;
+    color: #f3f3f3;
+    padding: 5px 10px;
+    float:right;
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+.icon-bar{
+    background-color: #333;
+    color: #f3f3f3;
+    height: 28px;
+}
+
+.icon-bar ul{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.icon-bar li{
+    display: inline;
+    padding:2px 10px;
+    position:relative;
+}
+
+.icon-bar a{
+    color:#f3f3f3;
+    text-decoration: none;
+    font-size:16PX;
+    padding-left:15px;
+    position: relative;
+}
+
+.icon-bar a::after{
+    background-color: cyan;
+    content:"";
+    width:0;
+    height:3px;
+    left:0;
+    bottom:-3.5px;
+    transition: width 0.3s ease 0.1s;
+    position: absolute;
+}
+
+.icon-bar a:hover::after{
+    width:100%;
+}
+
+.btn:hover {
+    background-color: #000; /* Add a hover color */
+  }
+  
+
+#background-image{
+    background-image: url(/Css/Images/Cycling3.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}
+
+#main-footer{
+    background: #333;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#main-header {
+    text-align: center;
+}
+
+.icon-bar i:hover::before{
+    animation:rotation 2.5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.icon-bar i:before{
+    display: inline-block;
+    transition: 0.5s;
+}
+
+/*
+.container{
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+}
+
+#main-header{
+    background-color:coral;
+    color: #fff;
+}
+ 
+#navbar{
+    background-color: #333;
+    color: #fff;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+
+}
+
+ 
+
+#navbar a{
+
+    color:#fff;
+
+    text-decoration: none;
+
+    font-size:18PX;
+
+    padding-right: 15px;
+
+}
+
+ 
+
+#showcase{
+
+    background-image:url('../images/showcase.jpg');
+
+    background-position: center right;
+
+    min-height: 300px;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+
+}
+
+ 
+
+#showcase h1{
+
+    color: #fff;
+
+    font-size: 50px;
+
+    line-height: 1.6em;
+
+    padding-top: 30px;
+
+}
+
+ 
+
+#main{
+
+    float: left;
+
+    width: 70%;
+
+    padding: 0 30px;
+
+    box-sizing: border-box;
+
+}
+
+ 
+
+#sidebar{
+
+    float: right;
+
+    width: 30%;
+
+    background: #333;
+
+    color:#fff:
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+}
+
+ 
+
+@media(max-width:400px){
+
+    #main{
+
+        width: 100%;
+
+        float: none;
+
+    }
+
+ 
+
+ 
+
+    #sidebar{
+
+        width: 100%;
+
+        float: none;
+
+    }
+
+}
+
+*/
